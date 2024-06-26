@@ -52,7 +52,7 @@ public class ReqresApiTests extends TestBase {
     @DisplayName("Create a new user with no name")
     @Test
     public void createUserSuccessWithNoNameTest() {
-        String userData = "{\"name\":\"morpheus\",\"job\":\"leader\"}";
+        String userData = "{\"job\":\"leader\"}";
         given()
                 .body(userData)
                 .contentType(JSON)
