@@ -31,7 +31,7 @@ public class ReqresApiTests extends TestBase {
 
     @DisplayName("Create a new user with no job")
     @Test
-    public void createUserSuccessWithNoJobTest() {
+    public void createUserWithNoJobSuccessTest() {
         String userData = "{\"name\":\"morpheus\"}";
         given()
                 .body(userData)
@@ -51,7 +51,7 @@ public class ReqresApiTests extends TestBase {
 
     @DisplayName("Create a new user with no name")
     @Test
-    public void createUserSuccessWithNoNameTest() {
+    public void createUserWithNoNameSuccessTest() {
         String userData = "{\"job\":\"leader\"}";
         given()
                 .body(userData)
@@ -71,7 +71,7 @@ public class ReqresApiTests extends TestBase {
 
     @DisplayName("Update a user with put method")
     @Test
-    public void updateUserSuccessWithPutTest() {
+    public void updateUserWithPutSuccessTest() {
         String userData = "{\"name\":\"morpheus\",\"job\":\"zion resident\"}";
         given()
                 .body(userData)
