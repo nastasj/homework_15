@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'io.qameta.allure' version '2.11.2'
-    id "io.freefair.lombok" version "6.0.0-m2"
+    id "io.freefair.lombok" version '6.0.0-m2'
 }
 
 repositories {
@@ -42,13 +42,6 @@ dependencies {
             'org.slf4j:slf4j-simple:2.0.13',
             "org.assertj:assertj-core:3.26.0"
     )
-}
-
-dependencies {
-    testImplementation(
-            "io.rest-assured:rest-assured:5.3.1",
-            "org.junit.jupiter:junit-jupiter:5.10.2",
-            "org.slf4j:slf4j-simple:2.0.13")
 }
 
 tasks.withType(Test) {
